@@ -1,0 +1,107 @@
+.webcam-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .webcam-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 20px;
+    min-height: 300px;
+  }
+  
+  .webcam-video {
+    display: block;
+    width: 100%;
+    background-color: #000;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    padding: 20px;
+    background-color: #ffebee;
+    border-radius: 4px;
+  }
+  
+  .error-message ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .captured-image-preview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .captured-image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .capture-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
